@@ -5,8 +5,8 @@ from torch import nn
 from torch.utils.data import TensorDataset, DataLoader
 
 
-test_set = 'C:\\Users\\elama\\Desktop\\CODE in general\\Artificial Intelligence\\ONLYHANDS\\mnist\\dataset\\mnist_test.csv'
-train_set = 'C:\\Users\\elama\\Desktop\\CODE in general\\Artificial Intelligence\\ONLYHANDS\\mnist\\dataset\\mnist_train.csv'
+test_set = 'C:\\path\\to\\testing_data.csv'
+train_set = 'C:\\path\\to\\training_data.csv'
 batch = 64
 lr = 0.1
 epoch = 3
@@ -109,7 +109,7 @@ for i in range(epoch):
     best = 0
 
     if last > best:
-        torch.save(model.state_dict(), 'C:\\Users\\elama\\Desktop\\CODE in general\\PyTorch\\model_.txt')
+        torch.save(model.state_dict(), 'C:\\path\\to\\save_data.csv')
         best = last
 
 
