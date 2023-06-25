@@ -36,7 +36,7 @@ class NeuralNetwork(nn.Module):
     
 # Define Model and load model with the pre-trained model.
 model = NeuralNetwork().to(device)
-model.load_state_dict(torch.load("C:\\Users\\elama\\Desktop\\CODE in general\\PyTorch\\model_.txt"))
+model.load_state_dict(torch.load('C:\\path\\to\\the_saved_data.csv'))
 
 # All possible predictable classes
 classes = [
